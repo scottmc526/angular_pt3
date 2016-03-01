@@ -7,7 +7,7 @@ function Pirate(){
 }
 
 /* GET home page. */
-router.get('/api/pirates', function(req, res, next) {
+router.get('/', function(req, res, next) {
   Pirate().select().then(function(result){
     res.json(200, {pirates:result})
   })

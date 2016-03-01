@@ -1,3 +1,6 @@
-app.controller('piratesController', ['$scope', function($scope){
-  $scope.num = 4;
+app.controller('piratesController', ['$scope', 'piratesService', function($scope, piratesService){
+  piratesService.all().then(function(pirates) {
+      $scope.pirates = pirates;
+      console.log($scope.pirates.pirates);
+    })
 }])
