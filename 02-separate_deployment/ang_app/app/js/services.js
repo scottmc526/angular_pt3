@@ -1,4 +1,4 @@
-app.service("CatService", function($http){
+app.service("CatService", function($http, $routeParams){
   var CatService = {};
 
   CatService.getCats = function(){
