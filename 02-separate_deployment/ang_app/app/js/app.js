@@ -8,6 +8,6 @@ app.config(function($routeProvider) {
   })
   .when('/cats/:id', {
     templateUrl: 'partials/show.html',
-    controller: 'MainController'
+    controller: 'showController'
   })
 })
