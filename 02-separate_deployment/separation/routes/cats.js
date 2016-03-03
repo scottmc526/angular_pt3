@@ -20,5 +20,11 @@ router.get("/:id", function(req,res){
    });
 });
 
+router.post('/', function(req, res){
+  Cat().insert(req.body).then(function(payload){
+    res.json(payload)
+  })
+})
+
 
 module.exports = router;

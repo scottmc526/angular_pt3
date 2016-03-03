@@ -11,9 +11,9 @@ app.service("CatService", function($http, $routeParams){
     // return $http.get("https://frozen-badlands-34577.herokuapp.com/cats/"+cat_id, {method: "jsonp"});
   }
   //
-  // CatService.postCat = function(cat) {
-  //   return $http.post('/cats')
-  // }
+  CatService.postCat = function(cat) {
+    return $http.post("http://localhost:3000/cats", cat, {method: "jsonp"}); 
+  }
 
   return CatService;
 });

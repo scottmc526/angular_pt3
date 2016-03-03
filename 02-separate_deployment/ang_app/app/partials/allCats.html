@@ -10,9 +10,9 @@
 </p>
 
 <p>New Cat:</p>
-<form ng-model='newCat'>
-  <input type="text" ng-model='name' placeholder="Cat Name">
-  <input type="text" ng-model='profile' placeholder="Cat Profile">
-  <input type="text" ng-model='age' placeholder="Cat Age">
+<form ng-model='cat' ng-submit='newCat()'>
+  <input type="text" ng-model='cat.name' placeholder="Cat Name">
+  <input type="text" ng-model='cat.profile' placeholder="Cat Profile">
+  <input type="text" ng-model='cat.age' placeholder="Cat Age">
   <input type="Submit" value='Submit new cat'>
 </form>
