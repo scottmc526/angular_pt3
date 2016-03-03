@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Pirates</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/spacelab/bootstrap.min.css">
   </head>
   <body ng-controller='piratesController'>
     <nav class="navbar navbar-default">
@@ -15,6 +15,13 @@
         </div>
       </div>
     </nav>
+    <button ng-click='newP()' class='btn btn-danger'>Add New Pirate</button>
+    <div ng-show='showForm'>
+      <input type="text" class='form-control' placeholder='Name'>
+      <input type="text" class='form-control' placeholder='Poison'>
+      <input type="text" class='form-control' placeholder='Accessory'>
+      <button type="submit" class='btn btn-success' name="button">Submit Pirate</button>
+    </div>
     <div ng-view></div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script>
